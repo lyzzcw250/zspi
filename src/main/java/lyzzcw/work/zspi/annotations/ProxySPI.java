@@ -8,7 +8,7 @@ import java.lang.annotation.*;
 /**
  * 代理 SPI
  *
- * @author 84428
+ * @author Luiz
  * @date 2024/11/27
  */
 @Inherited

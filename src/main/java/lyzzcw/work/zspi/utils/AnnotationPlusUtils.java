@@ -26,7 +26,7 @@ import static org.springframework.util.StringUtils.trimWhitespace;
 /**
  * 注解工具类
  *
- * @author 84428
+ * @author Luiz
  * @date 2024/11/27
  */
 public abstract class AnnotationPlusUtils {

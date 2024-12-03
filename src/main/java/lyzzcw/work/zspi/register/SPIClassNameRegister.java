@@ -15,7 +15,7 @@ import org.springframework.util.StringUtils;
 /**
  * @SPIClass spi class 信息维护
  *
- * @author lzy
+ * @author Luiz
  * @date 2024/11/22
  */
 @Component

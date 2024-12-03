@@ -8,7 +8,7 @@ import java.lang.annotation.*;
 /**
  * 数据库配置 SPI
  * 通过 mysql配置来实现spi注入
- * @author 84428
+ * @author Luiz
  * @date 2024/11/22
  */
 @Inherited

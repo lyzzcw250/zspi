@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 /**
  * 在Spring配置类上标记 @EnableSpringSPI 注解 启用功能
  *
- * @author 84428
+ * @author Luiz
  * @date 2024/11/22
  */
 @Target(ElementType.TYPE)

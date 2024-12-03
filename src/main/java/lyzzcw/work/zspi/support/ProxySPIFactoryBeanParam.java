@@ -5,7 +5,7 @@ import lombok.Data;
 /**
  * proxy spifactory bean 参数
  *
- * @author 84428
+ * @author Luiz
  * @date 2024/11/27
  */
 @Data

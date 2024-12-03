@@ -8,7 +8,7 @@ import org.springframework.core.type.AnnotationMetadata;
 /**
  * 启用 Spring SpiImport 选择器
  *
- * @author 84428
+ * @author Luiz
  * @date 2024/11/27
  */
 public class EnableSpringSPIImportSelector implements ImportSelector {

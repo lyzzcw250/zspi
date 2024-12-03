@@ -12,6 +12,10 @@ import org.springframework.core.env.Environment;
 import javax.sql.DataSource;
 import java.sql.SQLException;
 
+/**
+ * @author Luiz
+ * @date 2024/11/22
+ */
 @ComponentScan("lyzzcw.work.zspi")
 public class SpringSpiConfiguration{
     @Bean

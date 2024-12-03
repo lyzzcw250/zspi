@@ -7,7 +7,7 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
 /**
  * 启用 dbproxy 条件
  *
- * @author lzy
+ * @author Luiz
  * @date 2024/11/27
  */
 public class EnableDBProxyCondition implements Condition {

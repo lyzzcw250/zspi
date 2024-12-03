@@ -6,7 +6,7 @@ import java.lang.annotation.*;
 /**
  * 自动装配 SPI
  *
- * @author 84428
+ * @author Luiz
  * @date 2024/11/27
  */
 @Inherited

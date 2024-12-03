@@ -8,7 +8,7 @@ import java.lang.annotation.*;
 /**
  * 配置文件代理 SPI
  * 通过 spring 配置文件来实现spi注入
- * @author 84428
+ * @author Luiz
  * @date 2024/11/22
  */
 @Inherited

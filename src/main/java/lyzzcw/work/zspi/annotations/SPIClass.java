@@ -5,9 +5,9 @@ import java.lang.annotation.*;
 
 
 /**
- * Bean 别名
+ * spi 注入类
  *
- * @author 84428
+ * @author Luiz
  * @date 2024/11/27
  */
 @Inherited

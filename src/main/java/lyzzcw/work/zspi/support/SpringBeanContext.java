@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Spring Bean 上下文
  *
- * @author 84428
+ * @author Luiz
  * @date 2024/11/22
  */
 public abstract class SpringBeanContext implements ApplicationContextAware {
