@@ -1,7 +1,7 @@
 package lyzzcw.work.zspi.register;
 
 
-import lyzzcw.work.zspi.annotations.AutowiredProxySPI;
+import lyzzcw.work.zspi.annotations.AutowiredSPI;
 import lyzzcw.work.zspi.support.AnnotationMeta;
 import lyzzcw.work.zspi.support.AutowiredInvocation;
 import lyzzcw.work.zspi.support.ProxySPIFactoryBeanParam;
@@ -21,7 +21,7 @@ public class ProxySPIAutowiredBeanProcessor extends BaseAutowiredBeanProcessor {
 
     @Override
     public List<Class<? extends Annotation>> interceptAnnotation() {
-        return Collections.singletonList(AutowiredProxySPI.class);
+        return Collections.singletonList(AutowiredSPI.class);
     }
 
     @Override

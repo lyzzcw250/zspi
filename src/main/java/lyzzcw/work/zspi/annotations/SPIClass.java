@@ -13,7 +13,7 @@ import java.lang.annotation.*;
 @Inherited
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
-public @interface BeanAliasName {
+public @interface SPIClass {
 
     String value();
 

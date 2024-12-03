@@ -19,6 +19,6 @@ import java.lang.annotation.*;
 @Documented
 public @interface EnableSpringSPI {
 
-    boolean enableDBProxy() default false;
+    boolean enableDB() default false;
 
 }

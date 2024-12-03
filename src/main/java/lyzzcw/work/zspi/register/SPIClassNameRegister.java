@@ -2,7 +2,7 @@ package lyzzcw.work.zspi.register;
 
 
 
-import lyzzcw.work.zspi.annotations.BeanAliasName;
+import lyzzcw.work.zspi.annotations.SPIClass;
 import lyzzcw.work.zspi.support.SpringBeanContext;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -13,13 +13,13 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 /**
- * @BeanAliasName 别名信息维护
+ * @SPIClass spi class 信息维护
  *
  * @author lzy
  * @date 2024/11/22
  */
 @Component
-public class ProxySPIAliasNameRegister implements BeanDefinitionRegistryPostProcessor {
+public class SPIClassNameRegister implements BeanDefinitionRegistryPostProcessor {
 
     /**
      * 1.根据@BeanAliasName注解配置，维护bean+alise对应关系
@@ -38,9 +38,9 @@ public class ProxySPIAliasNameRegister implements BeanDefinitionRegistryPostProc
             }
             try {
                 Class<?> beanClass = Class.forName(beanClassName);
-                BeanAliasName proxySPIName = beanClass.getAnnotation(BeanAliasName.class);
-                if (proxySPIName != null){
-                    SpringBeanContext.registerBeanAlias(beanDefinitionName,proxySPIName.value());
+                SPIClass spiClass = beanClass.getAnnotation(SPIClass.class);
+                if (spiClass != null){
+                    SpringBeanContext.registerBeanAlias(beanDefinitionName,spiClass.value());
                 }
             } catch (ClassNotFoundException e) {
                 throw new RuntimeException("can not find class for beanDefinitionName " + beanDefinitionName,e);

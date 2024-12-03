@@ -2,7 +2,7 @@ package lyzzcw.work.zspi.handler;
 
 
 import lombok.Getter;
-import lyzzcw.work.zspi.annotations.DBProxySPI;
+import lyzzcw.work.zspi.annotations.DBSPI;
 import lyzzcw.work.zspi.handler.dao.DBProxyDao;
 import lyzzcw.work.zspi.handler.dao.DBProxyDaoImpl;
 import lyzzcw.work.zspi.register.AnnotationProxyFactory;
@@ -17,7 +17,7 @@ import javax.sql.DataSource;
 @Component
 @Conditional(EnableDBProxyCondition.class)
 @Getter
-public class DBProxyFactory implements AnnotationProxyFactory<DBProxySPI> {
+public class DBProxyFactory implements AnnotationProxyFactory<DBSPI> {
 
     private DBProxyDao dbProxyDao;
 
@@ -30,7 +30,7 @@ public class DBProxyFactory implements AnnotationProxyFactory<DBProxySPI> {
     }
 
     @Override
-    public Object getProxy(Class<?> targetClass,DBProxySPI spi) {
+    public Object getProxy(Class<?> targetClass, DBSPI spi) {
         String value = dbProxyDao.getService(spi.value());
         Object bean = null;
         try {

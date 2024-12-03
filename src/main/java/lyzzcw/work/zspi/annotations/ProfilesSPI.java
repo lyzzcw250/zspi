@@ -15,7 +15,7 @@ import java.lang.annotation.*;
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @ProxySPI(ProfilesProxyFactory.class)
-public @interface ProfilesProxySPI {
+public @interface ProfilesSPI {
 
     /**
      * spring environment attribute

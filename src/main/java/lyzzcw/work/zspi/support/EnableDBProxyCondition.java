@@ -14,7 +14,7 @@ public class EnableDBProxyCondition implements Condition {
     @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         // 从环境中读取 enableDBProxy 属性
-        Boolean enableDBProxy = context.getEnvironment().getProperty("enableDBProxy", Boolean.class, false);
-        return Boolean.TRUE.equals(enableDBProxy);
+        Boolean enableDB = context.getEnvironment().getProperty("enableDB", Boolean.class, false);
+        return Boolean.TRUE.equals(enableDB);
     }
 }

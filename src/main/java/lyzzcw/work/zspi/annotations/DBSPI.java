@@ -15,7 +15,7 @@ import java.lang.annotation.*;
 @Target({ElementType.FIELD,ElementType.METHOD,ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @ProxySPI(DBProxyFactory.class)
-public @interface DBProxySPI {
+public @interface DBSPI {
 
     String value();
 

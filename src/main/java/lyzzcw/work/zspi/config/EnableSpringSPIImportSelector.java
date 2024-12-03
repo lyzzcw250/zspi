@@ -19,9 +19,9 @@ public class EnableSpringSPIImportSelector implements ImportSelector {
                 importingClassMetadata.getAnnotationAttributes(EnableSpringSPI.class.getName(), false)
         );
         if (attributes != null) {
-            boolean enableDBProxy = attributes.getBoolean("enableDBProxy");
+            boolean enableDB = attributes.getBoolean("enableDB");
             // 设置环境属性，供 Condition 使用
-            System.setProperty("enableDBProxy", String.valueOf(enableDBProxy));
+            System.setProperty("enableDB", String.valueOf(enableDB));
         }
         return new String[]{SpringSpiConfiguration.class.getName()};
     }

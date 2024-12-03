@@ -2,7 +2,7 @@ package lyzzcw.work.zspi.handler;
 
 
 
-import lyzzcw.work.zspi.annotations.ProfilesProxySPI;
+import lyzzcw.work.zspi.annotations.ProfilesSPI;
 import lyzzcw.work.zspi.register.AnnotationProxyFactory;
 import lyzzcw.work.zspi.support.SpringBeanContext;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,13 +11,13 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-public class ProfilesProxyFactory implements AnnotationProxyFactory<ProfilesProxySPI> {
+public class ProfilesProxyFactory implements AnnotationProxyFactory<ProfilesSPI> {
 
     @Autowired
     private Environment environment;
 
     @Override
-    public Object getProxy(Class<?> targetClass, ProfilesProxySPI spi) {
+    public Object getProxy(Class<?> targetClass, ProfilesSPI spi) {
         String value = environment.resolvePlaceholders(spi.value());
         Object bean = null;
         try {
