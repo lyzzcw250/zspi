@@ -12,9 +12,9 @@ spring 动态依赖注入扩展
 引入依赖
 ```xml
     <dependency>
-        <groupId>lyzzcw.work.zspi</groupId>
-        <artifactId>zspi-parents</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
+        <groupId>com.zszc.component</groupId>
+        <artifactId>spring.spi</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </dependency>
 ```
 在spring启动类上标记 @EnableSpringSPI 注解
